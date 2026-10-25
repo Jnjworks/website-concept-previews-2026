@@ -2,242 +2,257 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Franz Grassmugg Kälte-Klima-Technik in Asperg: Planung, Montage und Wartung von Kühl-, Klima- und Wärmepumpenanlagen für Industrie, Gewerbe und Privatkunden.">
-<title>Franz Grassmugg Kälte-Klima-Technik | Kühlung · Klima · Wärmepumpen | Asperg</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Grassmugg Kälte-Klima-Technik | Kühlung, Klima und Wärmepumpen in Asperg</title>
+<meta name="description" content="Kühlanlagen und Kühlräume, Klimaanlagen und Wärmepumpen für Gewerbe, Industrie und Privatkunden in Asperg, Ludwigsburg und Stuttgart. Planung, Montage, Wartung.">
+<meta name="theme-color" content="#0f5f8c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f5f8c'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23ffffff'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --cool:#1B5D85; --ice:#E7F3F9; --deep:#123044; --signal:#B76908;
-  --surface:#FFFFFF; --rule:#B9CCD7;
+  --brand:#0f5f8c;--brand-text:#0f5f8c;--brand-deep:#093955;--on-brand:#ffffff;
+  --accent:#57b7e6;--accent-text:#197aa9;--on-accent:#16242d;
+  --ink:#16242d;--muted:#4f5f69;--ground:#ffffff;--surface:#f0f4f7;--line:#d5dde2;
+  --display:'Schibsted Grotesk', sans-serif;--body:'Schibsted Grotesk', sans-serif;
+  --wrap:1180px;--r1:2px;--r2:6px;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--surface);color:var(--deep);font:400 17px/1.6 "Source Sans 3",Arial,sans-serif}
-h1,h2,h3,.brand{font-family:"IBM Plex Sans Condensed","Arial Narrow",Arial,sans-serif;line-height:1.12;margin:0}
-p{margin:0 0 1em}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1.0625rem/1.6 var(--body);font-feature-settings:"kern"}
 img{display:block;max-width:100%;height:auto}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1100px,calc(100% - 40px));margin:0 auto}
-.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:.25rem;font-weight:700;font-family:"IBM Plex Sans Condensed",Arial,sans-serif;font-size:1rem}
-.btn-cool{background:var(--cool);color:#fff}
-.btn-sig{background:var(--signal);color:#fff}
-.btn-line{border:2px solid var(--cool);color:var(--cool)}
-.topbar{background:var(--deep);color:#fff;font-size:.9rem}
-.topbar .wrap{display:flex;justify-content:space-between;gap:12px;padding:.5rem 0;flex-wrap:wrap}
-.topbar a:hover{text-decoration:underline}
-nav.main .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:.9rem 0;flex-wrap:wrap}
-.brand{font-size:1.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--cool)}
-.brand span{display:block;font-size:.62rem;letter-spacing:2.4px;color:var(--deep);font-weight:500}
-.navlinks{display:flex;gap:1.2rem;font-weight:600;flex-wrap:wrap}
-.navlinks a:hover{color:var(--signal)}
-header.site{border-bottom:4px solid var(--cool)}
-.hero{background:linear-gradient(180deg,var(--ice) 0%,#fff 100%);padding:4rem 0}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
-.eyebrow{font-weight:600;color:var(--signal);letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
-.hero h1{font-size:clamp(2rem,4.6vw,3.3rem);margin:.6rem 0 1rem}
-.hero p.sub{font-size:1.15rem;max-width:34rem}
-.chips{display:flex;gap:10px;flex-wrap:wrap;margin:1.2rem 0 1.6rem;padding:0;list-style:none}
-.chips li{background:#fff;border:1px solid var(--rule);padding:.4rem .8rem;font-size:.85rem;font-weight:600;border-radius:.25rem}
-.ctarow{display:flex;gap:12px;flex-wrap:wrap}
-.hero figure{margin:0;position:relative}
-.hero figcaption{position:absolute;left:12px;bottom:12px;background:rgba(18,48,68,.88);color:#fff;font-size:.75rem;padding:.35rem .6rem}
-section{padding:4.2rem 0}
-.sec-head{max-width:46rem;margin-bottom:2.2rem}
-.sec-head h2{font-size:clamp(1.6rem,3.4vw,2.4rem);margin:.5rem 0 .8rem}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-.card{background:#fff;border:1px solid var(--rule);border-top:4px solid var(--cool);padding:1.4rem;border-radius:.25rem}
-.card.sig{border-top-color:var(--signal)}
-.card h3{font-size:1.18rem;margin-bottom:.5rem}
-.band{background:var(--deep);color:#eaf4fa}
-.band h2{font-size:clamp(1.6rem,3vw,2.3rem);margin-bottom:.9rem}
-.band .cols{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-.audience{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:2rem}
-.aud{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);padding:1.2rem;border-radius:.25rem}
-.aud b{font-family:"IBM Plex Sans Condensed";text-transform:uppercase;letter-spacing:1px;color:#9fd0ec;font-size:.85rem}
-.aud p{font-size:.92rem;margin:.4rem 0 0;color:#d7e7f1}
-.route{list-style:none;margin:1.4rem 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.route li{background:#fff;border-left:4px solid var(--signal);padding:1.1rem;border-radius:.25rem;color:var(--deep)}
-.route b{font-family:"IBM Plex Sans Condensed";color:var(--cool);font-size:.8rem;letter-spacing:1.5px}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.contact-card{background:var(--cool);color:#fff;padding:2rem;border-radius:.25rem}
-.contact-card a.big{display:inline-block;font-family:"IBM Plex Sans Condensed";font-size:1.4rem;font-weight:700;color:#fff;margin:.3rem 0}
-.contact-card address{font-style:normal;line-height:1.75;margin:1rem 0}
-.map-note{background:var(--ice);padding:1.6rem;border-radius:.25rem;border:1px solid var(--rule)}
-footer.site{background:var(--deep);color:#c6d8e4;font-size:.85rem;padding:1.6rem 0}
-footer.site a:hover{color:#fff;text-decoration:underline}
-@media(max-width:820px){
-  .hero .wrap,.band .cols,.contact-grid,.grid2{grid-template-columns:1fr}
-  .grid3,.audience{grid-template-columns:1fr}
-  .route{grid-template-columns:repeat(2,1fr)}
-  .topbar .wrap{justify-content:center;text-align:center}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+::selection{background:var(--brand);color:var(--on-brand)}
+h1,h2,h3{hyphens:manual;overflow-wrap:break-word;font-family:var(--display);font-weight:800;font-stretch:100%;letter-spacing:-0.03em;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.small{font-size:.875rem}
+.label{font-size:.8125rem;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+
+/* demo line */
+.demo{background:var(--ink);color:#fff;font-size:.8125rem}
+.demo .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:7px;padding-bottom:7px}
+.demo span{opacity:.82}
+.demo a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
+.brandmark{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brandmark img{max-height:46px;width:auto}
+.wordmark{font-family:var(--display);font-weight:800;font-stretch:100%;font-size:1.45rem;line-height:1;letter-spacing:-0.03em}
+.wordmark small{display:block;font-family:var(--body);font-weight:500;font-stretch:100%;font-size:.75rem;letter-spacing:.02em;color:var(--muted);margin-top:4px}
+nav.main{display:flex;gap:22px;font-weight:500;font-size:.95rem}
+nav.main a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+nav.main a:hover{border-color:var(--brand)}
+.headtel{font-weight:700;text-decoration:none;white-space:nowrap;color:var(--brand-text);font-variant-numeric:tabular-nums}
+.headtel small{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.02em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:var(--r1);font-weight:600;text-decoration:none;transition:background-color .18s,color .18s,transform .18s;border:2px solid var(--brand)}
+.btn.primary{background:var(--brand);color:var(--on-brand)}
+.btn.primary:hover{background:var(--brand-deep);border-color:var(--brand-deep)}
+.btn.quiet{color:var(--brand-text);background:transparent}
+.btn.quiet:hover{background:var(--surface)}
+.btn:active{transform:translateY(1px)}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,84px) 0 clamp(40px,6vw,72px)}
+.hero h1{font-size:clamp(2.3rem,5.2vw,4.4rem)}
+.hero .lead{font-size:clamp(1.08rem,1.5vw,1.25rem);max-width:36em;margin-top:22px;color:var(--ink)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .meta{margin-top:26px;color:var(--muted);font-size:.95rem}
+figure{margin:0}
+figcaption{font-size:.8125rem;color:var(--muted);margin-top:8px;line-height:1.4}
+
+.hero.split .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:end}
+.hero.split figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:var(--r2)}
+.hero.wide figure{margin-top:clamp(32px,5vw,56px)}
+.hero.wide figure img{width:100%;aspect-ratio:21/9;object-fit:cover;object-position:center;border-radius:var(--r2)}
+.hero.wide .top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:40px;align-items:end}
+.hero.sign{background:var(--brand);color:var(--on-brand);padding:clamp(56px,9vw,120px) 0}
+.hero.sign .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(32px,6vw,96px);align-items:end}
+.hero.sign h1{font-size:clamp(2.6rem,6.4vw,5.6rem);max-width:12em}
+.hero.sign h1.long{font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:14em}
+.vanlist{list-style:none;margin:0;padding:0;border-top:2px solid currentColor}
+.vanlist li{font-family:var(--display);font-weight:800;font-stretch:100%;font-size:clamp(1.15rem,1.8vw,1.55rem);line-height:1.15;padding:14px 0;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent);letter-spacing:-0.03em}
+.hero.sign .lead{color:var(--on-brand);opacity:.92}
+.hero.sign .btn.primary{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand)}
+.hero.sign .btn.quiet{color:var(--on-brand);border-color:var(--on-brand)}
+.hero.sign .btn.quiet:hover{background:rgba(255,255,255,.12)}
+.hero.sign .meta{color:var(--on-brand);opacity:.8}
+.hero.calm h1{font-size:clamp(2.2rem,4.4vw,3.7rem);max-width:15em}
+.hero.calm .wrap{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero.calm figure img{border-radius:var(--r2);width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+
+/* emergency band */
+.band{background:var(--accent);color:var(--on-accent)}
+.band .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:12px 40px;align-items:center;padding-top:26px;padding-bottom:26px}
+.band .num{font-family:var(--display);font-weight:800;font-stretch:100%;font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.band .what{font-weight:600}
+.band .when{font-size:.95rem;opacity:.9}
+
+/* sections */
+section.block{padding:clamp(56px,8vw,104px) 0}
+section.block.tint{background:var(--surface)}
+.head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px);margin-bottom:clamp(28px,4vw,48px);align-items:end}
+.head h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+.head p{margin:0;color:var(--muted);max-width:40em}
+
+/* services as a list, not cards */
+.services{border-top:2px solid var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr) ;gap:clamp(16px,3vw,44px);padding:28px 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:clamp(1.35rem,2.2vw,1.8rem)}
+.svc p{margin:0}
+.svc .items{margin-top:12px;color:var(--muted);font-size:.95rem}
+.svc img{border-radius:var(--r2);width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* extra */
+.extra .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px)}
+.extra h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.steps{margin:18px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2em 1fr;padding:10px 0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:800;color:var(--brand-text)}
+.timeline{display:grid;grid-template-columns:5.5em 1fr;margin:8px 0 0}
+.timeline dt,.timeline dd{padding:10px 0;border-top:1px solid var(--line);margin:0}
+.timeline dt{font-family:var(--display);font-weight:800;font-stretch:100%;color:var(--brand-text);font-variant-numeric:tabular-nums}
+.plain{margin:14px 0 0;padding:0 0 0 1.1em}
+.plain li{margin:4px 0}
+
+/* gallery */
+.gal-big{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 20px}
+.gal-big img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r2);background:var(--surface)}
+.gal-small{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px;margin-top:32px}
+.gal-small img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r2);background:var(--surface)}
+/* about */
+.about .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:start}
+.about h2{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:24px}
+.about .facts{font-family:var(--display);font-stretch:100%;font-weight:800;font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.3;margin:28px 0 0;padding-top:22px;border-top:2px solid var(--ink);letter-spacing:-0.03em}
+.about figure img{border-radius:var(--r2);width:100%}
+.about .sig{margin-top:22px;max-width:220px}
+.quote{margin:30px 0 0;padding:0 0 0 20px;border-left:2px solid var(--brand)}
+.quote p{font-family:var(--display);font-size:1.2rem;line-height:1.45;margin:0 0 8px}
+.quote footer{font-size:.9rem;color:var(--muted)}
+.people{margin-top:20px;font-size:.95rem;color:var(--muted)}
+
+/* jobs */
+.jobs{background:var(--brand);color:var(--on-brand)}
+.jobs .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:32px;align-items:center;padding-top:clamp(44px,6vw,72px);padding-bottom:clamp(44px,6vw,72px)}
+.jobs h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.jobs p{margin:12px 0 0;opacity:.92}
+.jobs .btn{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand);justify-self:start}
+
+/* contact */
+.contact .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,72px)}
+.contact h2{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:28px}
+.phones{list-style:none;margin:0;padding:0}
+.phones li{padding:14px 0;border-top:1px solid var(--line)}
+.phones a{font-family:var(--display);font-stretch:100%;font-weight:800;font-size:clamp(1.5rem,2.6vw,2.1rem);text-decoration:none;font-variant-numeric:tabular-nums;color:var(--brand-text)}
+.phones a:hover{text-decoration:underline}
+.addr{font-style:normal;margin-top:26px;line-height:1.55}
+table.hours{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+table.hours th,table.hours td{text-align:left;padding:10px 0;border-top:1px solid var(--line);font-weight:400;vertical-align:top}
+table.hours th{font-weight:600;padding-right:24px;white-space:nowrap}
+.contact .side h3{font-family:var(--body);font-stretch:100%;font-size:1rem;font-weight:700;letter-spacing:0;margin:0 0 10px}
+.contact .side>div+div{margin-top:30px}
+
+footer.site{background:var(--ink);color:#fff;padding:44px 0 56px;font-size:.9rem}
+footer.site .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+footer.site p{opacity:.78;margin:0 0 .6em}
+footer.site strong{font-weight:600}
+
+@media (max-width:900px){
+  nav.main{display:none}
+  .hero.split .wrap,.hero.sign .wrap,.hero.wide .top,.hero.calm .wrap,.head,.about .wrap,.contact .grid,.extra .wrap,.jobs .wrap,footer.site .wrap{grid-template-columns:1fr}
+  .hero.split figure img{aspect-ratio:4/3}
+  .svc{grid-template-columns:1fr;gap:8px}
+  .gal-big{grid-template-columns:1fr 1fr}
+  .gal-small{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .band .wrap{grid-template-columns:1fr;gap:6px}
 }
-@media(max-width:480px){.route{grid-template-columns:1fr}}
+@media (max-width:520px){
+  h1,h2,h3{hyphens:auto;-webkit-hyphens:auto}
+  body{font-size:1rem}
+  header.site .wrap{min-height:64px;gap:14px}
+  .brandmark img{max-height:37px}
+  .headtel small{display:none}
+  .headtel{font-size:.9rem}
+  .wordmark{font-size:1.2rem}
+  .demo span.long{display:none}
+  .gal-big{grid-template-columns:1fr 1fr;gap:18px 12px}
+  .gal-small{grid-template-columns:1fr 1fr;gap:16px 12px}
+}
 </style>
 </head>
 <body>
+<div class="demo"><div class="wrap"><span>Entwurf für Grassmugg<span class="long"> · nicht öffentlich, nicht in Suchmaschinen</span></span></div></div>
 
-<div class="topbar">
-  <div class="wrap">
-    <span>Saarstraße 4 · 71679 Asperg</span>
-    <span><a href="tel:+497141690577">☎ +49 7141 690577</a> &nbsp;·&nbsp; <a href="mailto:info@grassmugg.de">✉ info@grassmugg.de</a></span>
-  </div>
-</div>
+<header class="site"><div class="wrap">
+  <a class="brandmark" href="#top" aria-label="Grassmugg, zum Seitenanfang">
+<span class="wordmark">Grassmugg<small>Kälte, Klima, Technik. Asperg</small></span>  </a>
+  <nav class="main" aria-label="Hauptnavigation">
+<a href="#leistungen">Leistungen</a><a href="#ablauf">So arbeiten wir</a><a href="#kontakt">Kontakt</a>  </nav>
+<a class="headtel" href="tel:+497141690577"><small>Telefon</small>07141 690577</a></div></header>
 
-<header class="site">
-  <nav class="main wrap" aria-label="Hauptnavigation">
-    <div class="brand">Grassmugg<span>Kälte · Klima · Technik</span></div>
-    <div class="navlinks">
-      <a href="#systeme">Systeme</a>
-      <a href="#ablauf">So arbeiten wir</a>
-      <a href="#referenzen">Referenzen</a>
-      <a href="#kontakt">Kontakt</a>
+<main id="top">
+<section class="hero sign"><div class="wrap">
+  <div>
+  <h1>Kälte und Klima, die zuverlässig laufen</h1>
+  <p class="lead">Von der Kühlzelle für die Gastronomie über die Klimaanlage im Büro bis zur Wärmepumpe im Wohnhaus: Wir planen, montieren, nehmen in Betrieb und warten. In Asperg, Ludwigsburg, Stuttgart und der Region.</p>
+  <div class="actions">
+<a class="btn primary" href="tel:+497141690577">07141 690577 anrufen</a><a class="btn quiet" href="mailto:info@grassmugg.de">E-Mail schreiben</a>  </div>
+<p class="meta">Saarstraße 4, 71679 Asperg</p>  </div>
+  <ul class="vanlist" aria-label="Leistungen"><li>Kühlanlagen und Kühlräume</li><li>Klimaanlagen</li><li>Wärmepumpen</li><li>Wartung und Reparatur</li></ul>
+</div></section>
+
+
+<section class="block" id="leistungen"><div class="wrap">
+  <div class="head"><h2>Leistungen</h2></div>
+  <div class="services">
+    <div class="svc">
+      <h3>Kühlen</h3>
+      <div><p>Kühlanlagen und Kühlräume für Handwerk, Handel, Gastronomie und Industrie.</p></div>
     </div>
-    <a class="btn btn-sig" href="tel:+497141690577">Jetzt anrufen</a>
-  </nav>
-</header>
+    <div class="svc">
+      <h3>Klimatisieren</h3>
+      <div><p>Klimaanlagen und Wärmepumpen für angenehmes Raumklima bei Arbeit, Produktion und Wohnen.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Warten</h3>
+      <div><p>Service, Wartung und Reparatur, auch für Anlagen, die ein anderer Betrieb eingebaut hat. Jede Wartung wird sauber dokumentiert.</p></div>
+    </div>
+  </div>
+</div></section>
 
-<main>
-<section class="hero">
-  <div class="wrap">
+<section class="block extra tint" id="ablauf"><div class="wrap">
+  <h2>Vom ersten Gespräch bis zur laufenden Anlage</h2>
+  <div>
+<ol class="steps"><li><span>Beratung vor Ort: Wir sehen uns Ihr Objekt an</span></li><li><span>Planung: Auslegung auf Ihre Last und Ihr Gebäude</span></li><li><span>Montage und Inbetriebnahme, sauber dokumentiert</span></li><li><span>Service: Wartung und schnelle Hilfe bei Störungen</span></li></ol>  </div>
+</div></section>
+
+
+
+
+<section class="block contact tint" id="kontakt"><div class="wrap">
+  <h2>Kontakt</h2>
+  <div class="grid">
     <div>
-      <div class="eyebrow">Asperg · Ludwigsburg · Stuttgart · Region</div>
-      <h1>Kühl-, Klima- und Wärmepumpentechnik, die zuverlässig arbeitet.</h1>
-      <p class="sub">Von der Kühlanlage über die Klimaanlage bis zur Wärmepumpe: Wir planen, installieren, nehmen in Betrieb und warten – für Industrie, Gewerbe und Privatkunden.</p>
-      <ul class="chips">
-        <li>Kühlanlagen &amp; Kühlräume</li>
-        <li>Klimaanlagen</li>
-        <li>Wärmepumpen</li>
-        <li>Wartung &amp; Reparatur</li>
-      </ul>
-      <div class="ctarow">
-        <a class="btn btn-sig" href="tel:+497141690577">Direkt anrufen: +49 7141 690577</a>
-        <a class="btn btn-line" href="#kontakt">Anfrage senden</a>
-      </div>
-    </div>
-    <figure>
-      <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=70" alt="Techniker prüft eine industrielle Kälte- und Klimaanlage" width="800" height="533">
-      <figcaption>Fachgerechte Technik – sauber installiert</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section id="systeme">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Unsere Systeme</div>
-      <h2>Drei Wege zu Ihrem Ziel: kühlen, klimatisieren, warten.</h2>
-      <p>Sie kennen Ihr Objekt – wir kennen die Technik. Finden Sie hier den passenden Einstieg für Ihr Projekt oder Ihre Anlage.</p>
-    </div>
-    <div class="grid3">
-      <article class="card"><h3>Kühlen</h3><p>Kühlanlagen und Kühlräume für Handwerk, Handel, Gastronomie und Industrie – vom Gerät bis zur kompletten Lösung.</p></article>
-      <article class="card"><h3>Klimatisieren</h3><p>Klimaanlagen und Wärmepumpen für ein angenehmes Raumklima bei Arbeit, Produktion und Wohnen.</p></article>
-      <article class="card sig"><h3>Warten</h3><p>Service, Wartung und Reparatur halten Ihre Anlage effizient und verfügbar – auch Anlagen aus Fremdeinbau.</p></article>
+      <ul class="phones">
+<li><div class="label">Telefon</div><a href="tel:+497141690577">07141 690577</a></li><li><div class="label">E-Mail</div><a href="mailto:info@grassmugg.de" style="font-size:clamp(1.15rem,2vw,1.5rem)">info@grassmugg.de</a></li>      </ul>
+<address class="addr"><strong>Franz Grassmugg Kälte-Klima-Technik</strong><br>Saarstraße 4<br>71679 Asperg<br><a href="https://www.google.com/maps/search/?api=1&query=Franz%20Grassmugg%20K%C3%A4lte-Klima-Technik%20Saarstra%C3%9Fe%204%2071679%20Asperg" rel="noopener">Route planen</a></address>    </div>
+    <div class="side">
     </div>
   </div>
-</section>
-
-<section class="band" id="ablauf">
-  <div class="wrap band-cols">
-    <div class="cols">
-      <div>
-        <div class="eyebrow" style="color:#f2c078">So arbeiten wir</div>
-        <h2>Vom ersten Gespräch bis zur laufenden Anlage.</h2>
-        <p>Als spezialisierter Fachbetrieb begleiten wir Ihre Kälte- und Klimatechnik über den gesamten Lebenszyklus – mit klaren Abläufen statt Überraschungen.</p>
-        <a class="btn btn-sig" href="#kontakt">Beratungstermin anfragen</a>
-        <ol class="route">
-          <li><b>SCHRITT 1</b><br>Beratung vor Ort: Wir sehen uns Ihr Objekt an.</li>
-          <li><b>SCHRITT 2</b><br>Planung: Auslegung auf Ihre Last und Ihr Gebäude.</li>
-          <li><b>SCHRITT 3</b><br>Montage &amp; Inbetriebnahme: sauber und dokumentiert.</li>
-          <li><b>SCHRITT 4</b><br>Service: Wartung und schnelle Hilfe im Störungsfall.</li>
-        </ol>
-        <p style="margin-top:1rem;font-size:.92rem;color:#d7e7f1">Kälteanlagen müssen regelmäßig geprüft werden – wir dokumentieren jede Wartung sauber und verlässlich. Unser Team bringt viele Jahre Erfahrung im Kälte- und Klimahandwerk mit.</p>
-      </div>
-      <div>
-        <figure style="margin:0">
-          <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=70" alt="Servicetechniker wartet eine Klimaanlage" loading="lazy" width="450" height="300">
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="referenzen" style="background:var(--ice)">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Einsatzbereiche</div>
-      <h2>Einsatzgebiete, die wir täglich betreuen.</h2>
-      <p>Von der Werkstatt bis zum Bürogebäude, von der Küche im Restaurant bis zum Serverraum: Unsere Systeme laufen dort, wo Zuverlässigkeit zählt. Fragen Sie gern nach Referenzen aus Ihrem Branchenumfeld.</p>
-    </div>
-    <div class="audience">
-      <div class="aud"><b>Industrie</b><p>Prozesskühlung und technische Kühlung für Produktion und Lager.</p></div>
-      <div class="aud"><b>Gewerbe</b><p>Gastronomie, Handel, Praxen und Büros mit Klima- und Kühlbedarf.</p></div>
-      <div class="aud"><b>Privat</b><p>Komfortklima und Wärmepumpen für Wohnhäuser und Wohnungen.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="kontakt">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Kontakt</div>
-      <h2>Anlage defekt oder Projekt geplant? Melden Sie sich.</h2>
-      <p>Rufen Sie uns direkt an – am schnellsten sind wir so. Oder schreiben Sie uns zu Ihrer Anfrage; wir melden uns umgehend zurück.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3 style="color:#f2c078">Direkter Draht</h3>
-        <a class="big" href="tel:+497141690577">+49 7141 690577</a><br>
-        <a href="mailto:info@grassmugg.de" style="font-family:'IBM Plex Sans Condensed';font-weight:700;color:#fff">info@grassmugg.de</a>
-        <address>
-          Franz Grassmugg Kälte-Klima-Technik<br>
-          Saarstraße 4<br>
-          71679 Asperg
-        </address>
-        <p style="margin:0;font-size:.95rem;color:#dbeefb">Erreichbarkeit: Montag bis Freitag zu den üblichen Geschäftszeiten – außerhalb gerne Anrufbeantworter oder E-Mail.</p>
-      </div>
-      <div class="map-note">
-        <h3>Einzugsgebiet</h3>
-        <p>Unser Standort in Asperg liegt verkehrsgünstig zwischen Ludwigsburg und Stuttgart. Wir betreuen Kunden in der Region Stuttgart, im Landkreis Ludwigsburg und darüber hinaus.</p>
-        <p style="margin-bottom:0"><strong>Gut zu wissen:</strong> Je mehr Details Sie nennen (Gerät, Fehlerbild, Ort), desto schneller können wir helfen.</p>
-      </div>
-    </div>
-  </div>
-</section>
+</div></section>
 </main>
 
-<footer class="site">
-  <div class="wrap">
-    <p><strong>Franz Grassmugg Kälte-Klima-Technik</strong> · Saarstraße 4 · 71679 Asperg · <a href="tel:+497141690577">+49 7141 690577</a> · <a href="mailto:info@grassmugg.de">info@grassmugg.de</a> · Inhaber: Franz Grassmugg</p>
-    <p><a href="#impressum">Impressum</a> · <a href="#datenschutz">Datenschutz</a></p>
-    <p style="opacity:.75;margin:0">Unverbindlicher Website-Entwurf (DEMO) – Angaben vor Veröffentlichung durch den Betrieb zu bestätigen. Bilder: lizenziertes Stockmaterial (Unsplash).</p>
-  </div>
-</footer>
-
-<section id="impressum" style="padding-top:0">
-  <div class="wrap" style="max-width:46rem">
-    <h2>Impressum</h2>
-    <p><strong>Angaben gemäß § 5 TMG</strong><br>
-    Franz Grassmugg Kälte-Klima-Technik<br>
-    Inhaber: Franz Grassmugg<br>
-    Saarstraße 4<br>
-    71679 Asperg</p>
-    <p><strong>Kontakt:</strong> Telefon +49 7141 690577 · E-Mail: info@grassmugg.de</p>
-  </div>
-</section>
-
-<section id="datenschutz" style="padding-top:0">
-  <div class="wrap" style="max-width:46rem">
-    <h2>Datenschutz</h2>
-    <p>Diese Website verarbeitet personenbezogene Daten nur, wenn Sie uns diese freiwillig mitteilen (z.&nbsp;B. bei telefonischer Kontaktaufnahme oder per E-Mail). Die Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben. Sie können jederzeit Auskunft über die gespeicherten Daten verlangen sowie deren Löschung fordern.</p>
-    <p>Hinweis: Dieser Datenschutzhinweis ist eine Kurzfassung für den Demo-Entwurf und vor Veröffentlichung durch eine vollständige, rechtlich geprüfte Erklärung zu ersetzen.</p>
-  </div>
-</section>
-
-<a href="tel:+497141690577" style="position:fixed;right:16px;bottom:16px;z-index:60;background:var(--signal);color:#fff;padding:.8rem 1.1rem;border-radius:999px;font:700 .95rem 'IBM Plex Sans Condensed',Arial,sans-serif;box-shadow:0 6px 18px rgba(18,48,68,.35)">☎ Anrufen</a>
-
+<footer class="site"><div class="wrap">
+  <div><p><strong>Franz Grassmugg Kälte-Klima-Technik</strong></p><p>Saarstraße 4, 71679 Asperg</p></div>
+  <div><p>Dies ist ein unverbindlicher Entwurf von John Lukas für Grassmugg. Texte, Fotos und Logo stammen von Ihrem früheren Webauftritt und öffentlichen Einträgen und bleiben Ihr Eigentum. Die Seite ist nicht öffentlich verlinkt und für Suchmaschinen gesperrt.</p></div>
+</div></footer>
 </body>
 </html>

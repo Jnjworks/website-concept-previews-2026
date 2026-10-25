@@ -1,18 +1,266 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hausverwaltung Matrong | Witten</title><style>:root{--i:#262621;--g:#475046;--m:#d8d3c8;--p:#f5f3ed;--a:#aa3e28}*{box-sizing:border-box}body{margin:0;font:16px Arial,sans-serif;line-height:1.5;background:var(--p);color:var(--i)}.w{width:min(1180px,calc(100% - 48px));margin:auto}a{color:inherit;text-decoration:none}.demo{padding:8px;background:#20211e;color:#dddcd3;font-size:11px;text-align:center;letter-spacing:.07em}.nav{height:90px;display:flex;align-items:center;justify-content:space-between}.brand{font:31px Georgia,serif;letter-spacing:-.08em}.brand small{display:block;font:700 9px Arial;letter-spacing:.14em;text-transform:uppercase}.links{display:flex;gap:26px;font:700 12px Arial;letter-spacing:.08em;text-transform:uppercase}.btn{display:inline-block;background:var(--a);color:#fff;padding:13px 17px;font:700 12px Arial;letter-spacing:.08em;text-transform:uppercase}.hero{background:var(--g);color:#fff}.hero-grid{display:grid;grid-template-columns:1fr .92fr;min-height:570px}.copy{padding:104px 55px 65px 0}.eye{font:700 11px Arial;letter-spacing:.14em;text-transform:uppercase;color:#d8e3d5}.hero h1,h2{font-family:Georgia,serif;line-height:.9;letter-spacing:-.085em}.hero h1{font-size:clamp(56px,7vw,91px);margin:17px 0 24px}.hero h1 em{font-style:normal;color:#f0c1a9}.hero p{font-size:19px;max-width:465px;color:#e3e8df;margin-bottom:29px}.photo{position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.8)}.photo:after{content:'Witten · Ruhrgebiet';position:absolute;bottom:20px;left:20px;color:white;font:700 11px Arial;letter-spacing:.13em;text-transform:uppercase}.facts{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;border-bottom:1px solid var(--m)}.facts div{padding:27px;border-right:1px solid var(--m)}.facts div:last-child{border:0}.facts b{display:block;color:var(--a);font:37px Georgia,serif;letter-spacing:-.07em}.facts span{font-size:13px;color:#596058}.s{padding:103px 0}.head{display:grid;grid-template-columns:.9fr 1.1fr;gap:75px;align-items:end}.head h2{font-size:clamp(47px,5.5vw,76px);margin:13px 0 0}.head p{font-size:19px;color:#596058;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--m)}.card{min-height:225px;padding:25px 20px;border-right:1px solid var(--m);border-bottom:1px solid var(--m);background:#fbfaf6}.card:nth-child(even){background:#e8e6dd}.card i{font:15px Georgia,serif;color:var(--a)}.card h3{font:28px/.98 Georgia,serif;letter-spacing:-.06em;margin:55px 0 0}.band{background:#d8d3c8;padding:84px 0}.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:76px}.band h2{font-size:clamp(44px,5vw,70px);margin:13px 0}.band p{font-size:19px}.contact{background:#252821;color:white;padding:90px 0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:78px}.contact h2{font-size:clamp(47px,5.5vw,74px);margin:12px 0}.contact p{font-size:19px;color:#dce1d7}.detail{border-top:1px solid #899087}.detail div{display:flex;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid #899087}.detail span{font:700 11px Arial;letter-spacing:.1em;text-transform:uppercase;color:#cdd7c9}.detail b{text-align:right}.need{font-size:12px!important;color:#bdc6ba!important}footer{padding:25px 0;background:#171916;color:#d9ded5;font-size:12px}@media(max-width:800px){.w{width:calc(100% - 32px)}.links{display:none}.hero-grid,.head,.band-grid,.contact-grid{grid-template-columns:1fr;gap:34px}.copy{padding:66px 0 44px}.photo{min-height:310px}.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--m)}.grid{grid-template-columns:1fr 1fr}.card:nth-child(2n){border-right:0}.s,.band,.contact{padding:68px 0}}@media(max-width:420px){.grid{grid-template-columns:1fr}.card,.card:nth-child(n){border-right:0}.detail div{display:block}.detail b{display:block;text-align:left;margin-top:5px}}
-/* Konzeptdemo: Anfragebereich */
-.inquiry{padding:clamp(64px,8vw,120px) 0;background:#f4f1eb;color:#19252c}
-.inquiry .inquiry-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,1fr);gap:clamp(30px,6vw,88px);align-items:start}
-.inquiry h2{margin:10px 0 18px;font:clamp(38px,5vw,70px)/.96 Georgia,serif;letter-spacing:-.055em}
-.inquiry p{font:17px/1.6 Georgia,serif;max-width:550px}
-.inquiry form{display:grid;gap:15px;padding:28px;background:#fff;border:1px solid rgba(25,37,44,.16);box-shadow:0 14px 36px rgba(25,37,44,.08)}
-.inquiry label{display:grid;gap:7px;font:700 11px/1.1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#31424b}
-.inquiry input,.inquiry textarea{width:100%;box-sizing:border-box;border:1px solid #c6cbc7;background:#fafaf8;color:#1c272c;padding:13px 14px;font:16px/1.35 Arial,sans-serif;border-radius:0}
-.inquiry textarea{min-height:126px;resize:vertical}
-.inquiry button{justify-self:start;border:0;border-radius:0;padding:15px 18px;background:#c64535;color:#fff;font:700 12px/1 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
-.inquiry .form-note{margin:1px 0 0;font:12px/1.5 Arial,sans-serif;color:#526168}
-.legal{padding:38px 0;background:#e9e5dd;color:#263239}
-.legal .legal-grid{display:grid;grid-template-columns:180px 1fr;gap:25px;border-top:1px solid rgba(25,37,44,.18);padding-top:25px}
-.legal h2{margin:0;font:700 12px/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
-.legal p{margin:0;font:14px/1.6 Arial,sans-serif;max-width:800px}
-@media(max-width:760px){.inquiry .inquiry-grid,.legal .legal-grid{grid-template-columns:1fr}.inquiry form{padding:22px}}
-</style><meta name="robots" content="noindex,nofollow,noarchive,nosnippet"><meta name="referrer" content="no-referrer"></head><body><a class="qa-cta-2026" href="mailto:info@sozietaet-matrong.de" style="position:fixed;top:14px;right:14px;z-index:9999;background:#b85c38;color:#fff;padding:11px 18px;font:bold 13px Arial,sans-serif;border-radius:5px;text-decoration:none;box-shadow:0 3px 10px rgba(0,0,0,.3);letter-spacing:.3px;">E-Mail schreiben</a><div class="demo">KONZEPTDEMO · NICHT DIE VERÖFFENTLICHTE UNTERNEHMENSWEBSITE</div><header class="w nav"><a class="brand" href="#start">Hausverwaltung Matrong<small>Immobilienverwaltung · Witten</small></a><nav class="links"><a href="#leistungen">Leistungen</a><a href="#kontakt">Kontakt</a></nav><a class="btn" href="#kontakt">Kontakt ↗</a></header><main id="start"><section class="hero"><div class="w hero-grid"><div class="copy"><div class="eye">Hausverwaltung in Witten</div><h1>Immobilien. <em>Persönlich</em> betreut.</h1><p>Hausverwaltung Matrong verwaltet nach eigener Website Mietshäuser, Fremdobjekte und Eigentümergemeinschaften in Witten und weiteren Städten der Region.</p><a class="btn" href="#leistungen">Leistungen entdecken ↓</a></div><div class="photo"><img src="assets/matrong-objekt-01.jpg" alt="Originalaufnahme aus dem Auftritt von Hausverwaltung Matrong"></div></div></section><section class="w facts"><div><b>20+</b><span>Jahre Unternehmensgeschichte laut Website</span></div><div><b>5</b><span>öffentlich genannte Städte der Verwaltungsregion</span></div><div><b>Witten</b><span>Sitz: Nordstraße 2 · 58452 Witten</span></div></section><section class="s w" id="leistungen"><div class="head"><div><div class="eye" style="color:var(--a)">Dienstleistungen</div><h2>Verwaltung, die weiterdenkt.</h2></div><p>Die Website nennt Verwaltung und Betreuung vom kaufmännischen bis zum technischen Bereich. Der Rebuild ordnet die bestätigten Aufgaben verständlich, ohne zusätzliche Leistungsversprechen zu erfinden.</p></div><div class="grid"><article class="card"><i>01</i><h3>Vermietung</h3></article><article class="card"><i>02</i><h3>Betriebs- & Heizkostenabrechnung</h3></article><article class="card"><i>03</i><h3>Komplette Buchhaltung</h3></article><article class="card"><i>04</i><h3>Technische Kontrolle & Betreuung</h3></article><article class="card"><i>05</i><h3>Forderungsmanagement</h3></article><article class="card"><i>06</i><h3>Eigentümergemeinschaften</h3></article></div></section><section class="band"><div class="w band-grid"><div><div class="eye" style="color:var(--a)">Regional verwurzelt</div><h2>Verantwortung für Immobilien.</h2></div><p>Hausverwaltung Matrong nennt Witten, Bochum, Dortmund, Herne und Köln als Verwaltungsregion. Im Mittelpunkt stehen nach eigener Aussage die individuelle Objektbetreuung und der persönliche Kontakt zu Mietern und Eigentümern.</p></div></section><section class="contact" id="kontakt"><div class="w contact-grid"><div><div class="eye">Kontakt</div><h2>Ihr Anliegen, direkt besprochen.</h2><p>Für einen Termin bittet Hausverwaltung Matrong öffentlich um vorherige Absprache.</p></div><div class="detail"><div><span>Anschrift</span><b>Nordstraße 2<br>58452 Witten</b></div><div><span>Geschäftszeiten</span><b>Mo–Do 08:00–16:30<br>Fr 08:00–15:00</b></div><div><span>Veröffentlichung</span><b>Weitere Angaben werden im Rahmen der finalen Projektabstimmung ergänzt.</b></div><p class="need">Gerne stimmen wir die Details in einem persönlichen Gespräch mit Ihnen ab.</p></div></div></section><section class="inquiry" id="kontaktformular" aria-labelledby="anfrage-title"><div class="w inquiry-grid"><div><div class="eye">Unverbindliche Anfrage</div><h2 id="anfrage-title">Lassen Sie uns<br>ins Gespräch kommen.</h2><p>Schildern Sie kurz Ihr Anliegen. Über „Anfrage per E-Mail vorbereiten“ öffnet sich Ihr E-Mail-Programm mit der öffentlich angegebenen Geschäftsadresse als Empfänger.</p></div><form action="mailto:info@sozietaet-matrong.de" method="post" enctype="text/plain"><label>Ihr Name<input type="text" name="Name" autocomplete="name" required></label><label>Ihre E-Mail-Adresse<input type="email" name="E-Mail" autocomplete="email" required></label><label>Ihre Nachricht<textarea name="Nachricht" required placeholder="Worum geht es?"></textarea></label><button type="submit">Anfrage per E-Mail vorbereiten</button><p class="form-note">Ihre Angaben werden nicht auf dieser Vorschauseite gespeichert oder an Trackingdienste übermittelt.</p></form></div></section></main><footer><div class="w">Hausverwaltung Matrong · Konzeptdemo · <a href="#rechtliches">Impressum</a> · <a href="#rechtliches">Datenschutz</a></div></footer><section class="legal" id="rechtliches" aria-label="Rechtliche Hinweise"><div class="w legal-grid"><h2>Rechtliche Hinweise</h2><p>Diese Seite ist eine nicht indexierte Konzeptdemo und keine veröffentlichte Unternehmenswebsite. Für eine spätere Liveschaltung werden die vollständigen Unternehmensangaben, Impressums- und Datenschutzhinweise gemeinsam mit dem Unternehmen abgestimmt und rechtlich geprüft.</p></div></section></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Hausverwaltung Matrong | Mietverwaltung in Witten</title>
+<meta name="description" content="Hausverwaltung mit Sitz in Witten: Vermietung, Betriebskostenabrechnung, Buchhaltung und technische Betreuung von Mietshäusern in Witten, Bochum, Dortmund, Herne und Köln.">
+<meta name="theme-color" content="#054383">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23054383'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23ffffff'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&amp;family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#054383;--brand-text:#054383;--brand-deep:#032548;--on-brand:#ffffff;
+  --accent:#054383;--accent-text:#054383;--on-accent:#ffffff;
+  --ink:#16212d;--muted:#4f5c69;--ground:#ffffff;--surface:#f0f3f7;--line:#d5dbe2;
+  --display:'Newsreader', serif;--body:'Public Sans', sans-serif;
+  --wrap:1180px;--r1:2px;--r2:6px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1.0625rem/1.6 var(--body);font-feature-settings:"kern"}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+::selection{background:var(--brand);color:var(--on-brand)}
+h1,h2,h3{hyphens:manual;overflow-wrap:break-word;font-family:var(--display);font-weight:500;font-stretch:100%;letter-spacing:-0.01em;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.small{font-size:.875rem}
+.label{font-size:.8125rem;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+
+/* demo line */
+.demo{background:var(--ink);color:#fff;font-size:.8125rem}
+.demo .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:7px;padding-bottom:7px}
+.demo span{opacity:.82}
+.demo a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
+.brandmark{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brandmark img{max-height:60px;width:auto}
+.wordmark{font-family:var(--display);font-weight:500;font-stretch:100%;font-size:1.45rem;line-height:1;letter-spacing:-0.01em}
+.wordmark small{display:block;font-family:var(--body);font-weight:500;font-stretch:100%;font-size:.75rem;letter-spacing:.02em;color:var(--muted);margin-top:4px}
+nav.main{display:flex;gap:22px;font-weight:500;font-size:.95rem}
+nav.main a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+nav.main a:hover{border-color:var(--brand)}
+.headtel{font-weight:700;text-decoration:none;white-space:nowrap;color:var(--brand-text);font-variant-numeric:tabular-nums}
+.headtel small{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.02em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:var(--r1);font-weight:600;text-decoration:none;transition:background-color .18s,color .18s,transform .18s;border:2px solid var(--brand)}
+.btn.primary{background:var(--brand);color:var(--on-brand)}
+.btn.primary:hover{background:var(--brand-deep);border-color:var(--brand-deep)}
+.btn.quiet{color:var(--brand-text);background:transparent}
+.btn.quiet:hover{background:var(--surface)}
+.btn:active{transform:translateY(1px)}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,84px) 0 clamp(40px,6vw,72px)}
+.hero h1{font-size:clamp(2.3rem,5.2vw,4.4rem)}
+.hero .lead{font-size:clamp(1.08rem,1.5vw,1.25rem);max-width:36em;margin-top:22px;color:var(--ink)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .meta{margin-top:26px;color:var(--muted);font-size:.95rem}
+figure{margin:0}
+figcaption{font-size:.8125rem;color:var(--muted);margin-top:8px;line-height:1.4}
+
+.hero.split .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:end}
+.hero.split figure img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border-radius:var(--r2)}
+.hero.wide figure{margin-top:clamp(32px,5vw,56px)}
+.hero.wide figure img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center;border-radius:var(--r2)}
+.hero.wide .top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:40px;align-items:end}
+.hero.sign{background:var(--brand);color:var(--on-brand);padding:clamp(56px,9vw,120px) 0}
+.hero.sign .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(32px,6vw,96px);align-items:end}
+.hero.sign h1{font-size:clamp(2.6rem,6.4vw,5.6rem);max-width:12em}
+.hero.sign h1.long{font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:14em}
+.vanlist{list-style:none;margin:0;padding:0;border-top:2px solid currentColor}
+.vanlist li{font-family:var(--display);font-weight:500;font-stretch:100%;font-size:clamp(1.15rem,1.8vw,1.55rem);line-height:1.15;padding:14px 0;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent);letter-spacing:-0.01em}
+.hero.sign .lead{color:var(--on-brand);opacity:.92}
+.hero.sign .btn.primary{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand)}
+.hero.sign .btn.quiet{color:var(--on-brand);border-color:var(--on-brand)}
+.hero.sign .btn.quiet:hover{background:rgba(255,255,255,.12)}
+.hero.sign .meta{color:var(--on-brand);opacity:.8}
+.hero.calm h1{font-size:clamp(2.2rem,4.4vw,3.7rem);max-width:15em}
+.hero.calm .wrap{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero.calm figure img{border-radius:var(--r2);width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center}
+
+/* emergency band */
+.band{background:var(--accent);color:var(--on-accent)}
+.band .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:12px 40px;align-items:center;padding-top:26px;padding-bottom:26px}
+.band .num{font-family:var(--display);font-weight:500;font-stretch:100%;font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.band .what{font-weight:600}
+.band .when{font-size:.95rem;opacity:.9}
+
+/* sections */
+section.block{padding:clamp(56px,8vw,104px) 0}
+section.block.tint{background:var(--surface)}
+.head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px);margin-bottom:clamp(28px,4vw,48px);align-items:end}
+.head h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+.head p{margin:0;color:var(--muted);max-width:40em}
+
+/* services as a list, not cards */
+.services{border-top:2px solid var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr) ;gap:clamp(16px,3vw,44px);padding:28px 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:clamp(1.35rem,2.2vw,1.8rem)}
+.svc p{margin:0}
+.svc .items{margin-top:12px;color:var(--muted);font-size:.95rem}
+.svc img{border-radius:var(--r2);width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* extra */
+.extra .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px)}
+.extra h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.steps{margin:18px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2em 1fr;padding:10px 0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:500;color:var(--brand-text)}
+.timeline{display:grid;grid-template-columns:5.5em 1fr;margin:8px 0 0}
+.timeline dt,.timeline dd{padding:10px 0;border-top:1px solid var(--line);margin:0}
+.timeline dt{font-family:var(--display);font-weight:500;font-stretch:100%;color:var(--brand-text);font-variant-numeric:tabular-nums}
+.plain{margin:14px 0 0;padding:0 0 0 1.1em}
+.plain li{margin:4px 0}
+
+/* gallery */
+.gal-big{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 20px}
+.gal-big img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r2);background:var(--surface)}
+.gal-small{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px;margin-top:32px}
+.gal-small img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r2);background:var(--surface)}
+/* about */
+.about .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:start}
+.about h2{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:24px}
+.about .facts{font-family:var(--display);font-stretch:100%;font-weight:500;font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.3;margin:28px 0 0;padding-top:22px;border-top:2px solid var(--ink);letter-spacing:-0.01em}
+.about figure img{border-radius:var(--r2);width:100%}
+.about .sig{margin-top:22px;max-width:220px}
+.quote{margin:30px 0 0;padding:0 0 0 20px;border-left:2px solid var(--brand)}
+.quote p{font-family:var(--display);font-size:1.2rem;line-height:1.45;margin:0 0 8px}
+.quote footer{font-size:.9rem;color:var(--muted)}
+.people{margin-top:20px;font-size:.95rem;color:var(--muted)}
+
+/* jobs */
+.jobs{background:var(--brand);color:var(--on-brand)}
+.jobs .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:32px;align-items:center;padding-top:clamp(44px,6vw,72px);padding-bottom:clamp(44px,6vw,72px)}
+.jobs h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.jobs p{margin:12px 0 0;opacity:.92}
+.jobs .btn{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand);justify-self:start}
+
+/* contact */
+.contact .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,72px)}
+.contact h2{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:28px}
+.phones{list-style:none;margin:0;padding:0}
+.phones li{padding:14px 0;border-top:1px solid var(--line)}
+.phones a{font-family:var(--display);font-stretch:100%;font-weight:500;font-size:clamp(1.5rem,2.6vw,2.1rem);text-decoration:none;font-variant-numeric:tabular-nums;color:var(--brand-text)}
+.phones a:hover{text-decoration:underline}
+.addr{font-style:normal;margin-top:26px;line-height:1.55}
+table.hours{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+table.hours th,table.hours td{text-align:left;padding:10px 0;border-top:1px solid var(--line);font-weight:400;vertical-align:top}
+table.hours th{font-weight:600;padding-right:24px;white-space:nowrap}
+.contact .side h3{font-family:var(--body);font-stretch:100%;font-size:1rem;font-weight:700;letter-spacing:0;margin:0 0 10px}
+.contact .side>div+div{margin-top:30px}
+
+footer.site{background:var(--ink);color:#fff;padding:44px 0 56px;font-size:.9rem}
+footer.site .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+footer.site p{opacity:.78;margin:0 0 .6em}
+footer.site strong{font-weight:600}
+
+@media (max-width:900px){
+  nav.main{display:none}
+  .hero.split .wrap,.hero.sign .wrap,.hero.wide .top,.hero.calm .wrap,.head,.about .wrap,.contact .grid,.extra .wrap,.jobs .wrap,footer.site .wrap{grid-template-columns:1fr}
+  .hero.split figure img{aspect-ratio:4/3}
+  .svc{grid-template-columns:1fr;gap:8px}
+  .gal-big{grid-template-columns:1fr 1fr}
+  .gal-small{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .band .wrap{grid-template-columns:1fr;gap:6px}
+}
+@media (max-width:520px){
+  h1,h2,h3{hyphens:auto;-webkit-hyphens:auto}
+  body{font-size:1rem}
+  header.site .wrap{min-height:64px;gap:14px}
+  .brandmark img{max-height:48px}
+  .headtel small{display:none}
+  .headtel{font-size:.9rem}
+  .wordmark{font-size:1.2rem}
+  .demo span.long{display:none}
+  .gal-big{grid-template-columns:1fr 1fr;gap:18px 12px}
+  .gal-small{grid-template-columns:1fr 1fr;gap:16px 12px}
+}
+</style>
+</head>
+<body>
+<div class="demo"><div class="wrap"><span>Entwurf für Hausverwaltung Matrong<span class="long"> · nicht öffentlich, nicht in Suchmaschinen</span></span></div></div>
+
+<header class="site"><div class="wrap">
+  <a class="brandmark" href="#top" aria-label="Hausverwaltung Matrong, zum Seitenanfang">
+<img src="img/3430f6e299.webp" alt="Hausverwaltung Matrong" width="300" height="153">  </a>
+  <nav class="main" aria-label="Hauptnavigation">
+<a href="#leistungen">Leistungen</a><a href="#referenzen">Team</a><a href="#kontakt">Kontakt</a>  </nav>
+<a class="headtel" href="tel:+49230255814"><small>Telefon</small>02302 55814</a></div></header>
+
+<main id="top">
+<section class="hero calm"><div class="wrap">
+  <div>
+    <h1>Wir verwalten Mietshäuser, als wären es unsere eigenen</h1>
+    <p class="lead">Spezialisiert auf die Verwaltung von Mietshäusern, mit Sitz in Witten. Allgemein, technisch und kaufmännisch, mit persönlichem Kontakt zu Mietern und Eigentümern.</p>
+    <div class="actions">
+<a class="btn primary" href="tel:+49230255814">02302 55814 anrufen</a><a class="btn quiet" href="mailto:info@matrong.de">E-Mail schreiben</a>    </div>
+<p class="meta">Telefonisch Mo bis Fr von 9 bis 12 Uhr</p>  </div>
+<figure><img src="img/9966625dd8.webp" width="1024" height="442" alt="Gepflegtes Wohnhaus mit Garten" fetchpriority="high"><figcaption>Gepflegte Immobilien sind unser Anspruch</figcaption></figure></div></section>
+
+
+<section class="block" id="leistungen"><div class="wrap">
+  <div class="head"><h2>Unsere Aufgaben</h2><p>Wir verwalten eigene Objekte, Fremdobjekte und Eigentümergemeinschaften in Witten, Bochum, Dortmund, Herne und Köln.</p></div>
+  <div class="services">
+    <div class="svc">
+      <h3>Vermietung</h3>
+      <div><p>Wohnungen und Gewerberäume, von der Besichtigung bis zum Vertrag. Interessenten füllen unsere Selbstauskunft aus.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Abrechnung und Buchhaltung</h3>
+      <div><p>Betriebs- und Heizkostenabrechnung und die komplette Buchhaltung für Ihr Objekt. Offene Zahlungen verfolgen wir konsequent.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Technische Betreuung</h3>
+      <div><p>Regelmäßige Kontrolle des Hauses und Beauftragung der Handwerker, wenn etwas zu tun ist.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Hausfrieden</h3>
+      <div><p>Wir sorgen dafür, dass die Hausordnung eingehalten wird, und vertreten Sie über unseren Anwalt vor Behörden und Gerichten.</p></div>
+    </div>
+  </div>
+</div></section>
+
+
+<section class="block tint" id="referenzen"><div class="wrap">
+  <div class="head"><h2>Ihre Ansprechpartner</h2></div>
+<div class="gal-small">
+<figure><img src="img/e146d024de.webp" width="223" height="224" alt="Niklas Matrong, Geschäftsführer" loading="lazy" style="object-position:center"><figcaption>Niklas Matrong, Geschäftsführer</figcaption></figure><figure><img src="img/8abc1012aa.webp" width="226" height="226" alt="Lisa Matrong, kaufmännische Angestellte" loading="lazy" style="object-position:center"><figcaption>Lisa Matrong, kaufmännische Angestellte</figcaption></figure><figure><img src="img/323d45da2a.webp" width="226" height="226" alt="Natalie Palla, Immobilienkauffrau IHK" loading="lazy" style="object-position:center"><figcaption>Natalie Palla, Immobilienkauffrau IHK</figcaption></figure><figure><img src="img/e0ebdb05af.webp" width="225" height="226" alt="Larissa Kartenberg, kaufmännische Angestellte IHK" loading="lazy" style="object-position:center"><figcaption>Larissa Kartenberg, kaufmännische Angestellte IHK</figcaption></figure>  </div></div>
+</div></section>
+
+<section class="block about" id="betrieb"><div class="wrap">
+  <div>
+    <h2>Persönlich statt anonym</h2>
+<p>Bei uns steht die individuelle Betreuung der Objekte im Vordergrund. Mieter und Eigentümer wissen, wen sie anrufen.</p><p>Die Industrie- und Handelskammer hat der Matrong GmbH &amp; Co. KG zum 100-jährigen Jubiläum gratuliert.</p>  </div>
+<figure><img src="img/6e600993bc.webp" width="725" height="1024" alt="Jubiläumsurkunde der IHK für die Matrong GmbH &amp; Co. KG" loading="lazy"><figcaption>IHK-Urkunde zum 100-jährigen Jubiläum</figcaption></figure></div></section>
+
+
+<section class="block contact tint" id="kontakt"><div class="wrap">
+  <h2>Kontakt</h2>
+  <div class="grid">
+    <div>
+      <ul class="phones">
+<li><div class="label">Telefon</div><a href="tel:+49230255814">02302 55814</a></li><li><div class="label">E-Mail</div><a href="mailto:info@matrong.de" style="font-size:clamp(1.15rem,2vw,1.5rem)">info@matrong.de</a></li>      </ul>
+<address class="addr"><strong>Hausverwaltung Matrong</strong><br>Nordstraße 2<br>58452 Witten<br><a href="https://www.google.com/maps/search/?api=1&query=Hausverwaltung%20Matrong%20Nordstra%C3%9Fe%202%2058452%20Witten" rel="noopener">Route planen</a></address>    </div>
+    <div class="side">
+<div><h3>Geschäftszeiten</h3><table class="hours"><tr><th>Mo bis Do</th><td>8 bis 16:30 Uhr</td></tr><tr><th>Fr</th><td>8 bis 15 Uhr</td></tr><tr><th>Telefon</th><td>Mo bis Fr 9 bis 12 Uhr</td></tr></table></div><div><p class="small" style="color:var(--muted)">Bitte vereinbaren Sie vorher einen Termin.</p></div>    </div>
+  </div>
+</div></section>
+</main>
+
+<footer class="site"><div class="wrap">
+  <div><p><strong>Hausverwaltung Matrong</strong></p><p>Nordstraße 2, 58452 Witten</p></div>
+  <div><p>Dies ist ein unverbindlicher Entwurf von John Lukas für Hausverwaltung Matrong. Texte, Fotos und Logo stammen von hausverwaltung-matrong.de und bleiben Ihr Eigentum. Die Seite ist nicht öffentlich verlinkt und für Suchmaschinen gesperrt.</p></div>
+</div></footer>
+</body>
+</html>

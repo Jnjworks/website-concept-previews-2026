@@ -1,171 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Günter Wolf | Elektrische Anlagen Karlsruhe</title>
-<meta name="description" content="Elektroinstallation, Smart Home, Beleuchtung, Sprechanlagen, Datennetzwerke und Elektromobilität – aus einem familiengeführten Elektrofachbetrieb.">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+<title>Günter Wolf Elektrische Anlagen GmbH | Elektriker in Karlsruhe</title>
+<meta name="description" content="Elektroinstallation, Sprechanlagen, Smart Home, Lichtplanung, Datennetze und E-Mobilität aus Karlsruhe-Bulach. Familienbetrieb in zweiter Generation seit 1967.">
+<meta name="theme-color" content="#a5201d">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23a5201d'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23ffffff'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&amp;family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#a5201d;--brand-text:#a5201d;--brand-deep:#711614;--on-brand:#ffffff;
+  --accent:#a5201d;--accent-text:#a5201d;--on-accent:#ffffff;
+  --ink:#1b1b1b;--muted:#69504f;--ground:#ffffff;--surface:#f7f0f0;--line:#e2d5d5;
+  --display:'Barlow Condensed', sans-serif;--body:'Barlow', sans-serif;
+  --wrap:1180px;--r1:2px;--r2:6px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--ground);color:var(--ink);font:400 1.0625rem/1.6 var(--body);font-feature-settings:"kern"}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.18em;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+::selection{background:var(--brand);color:var(--on-brand)}
+h1,h2,h3{hyphens:manual;overflow-wrap:break-word;font-family:var(--display);font-weight:700;font-stretch:100%;letter-spacing:-0.005em;line-height:1.05;margin:0;text-wrap:balance}
+p{margin:0 0 1em;text-wrap:pretty}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+.small{font-size:.875rem}
+.label{font-size:.8125rem;font-weight:600;letter-spacing:.02em;color:var(--muted)}
+
+/* demo line */
+.demo{background:var(--ink);color:#fff;font-size:.8125rem}
+.demo .wrap{display:flex;justify-content:space-between;gap:16px;padding-top:7px;padding-bottom:7px}
+.demo span{opacity:.82}
+.demo a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+
+/* header */
+header.site{position:sticky;top:0;z-index:20;background:var(--ground);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:28px;min-height:76px}
+.brandmark{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.brandmark img{max-height:46px;width:auto}
+.wordmark{font-family:var(--display);font-weight:700;font-stretch:100%;font-size:1.45rem;line-height:1;letter-spacing:-0.005em}
+.wordmark small{display:block;font-family:var(--body);font-weight:500;font-stretch:100%;font-size:.75rem;letter-spacing:.02em;color:var(--muted);margin-top:4px}
+nav.main{display:flex;gap:22px;font-weight:500;font-size:.95rem}
+nav.main a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent;transition:border-color .2s}
+nav.main a:hover{border-color:var(--brand)}
+.headtel{font-weight:700;text-decoration:none;white-space:nowrap;color:var(--brand-text);font-variant-numeric:tabular-nums}
+.headtel small{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.02em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:var(--r1);font-weight:600;text-decoration:none;transition:background-color .18s,color .18s,transform .18s;border:2px solid var(--brand)}
+.btn.primary{background:var(--brand);color:var(--on-brand)}
+.btn.primary:hover{background:var(--brand-deep);border-color:var(--brand-deep)}
+.btn.quiet{color:var(--brand-text);background:transparent}
+.btn.quiet:hover{background:var(--surface)}
+.btn:active{transform:translateY(1px)}
+
+/* hero */
+.hero{padding:clamp(40px,6vw,84px) 0 clamp(40px,6vw,72px)}
+.hero h1{font-size:clamp(2.3rem,5.2vw,4.4rem)}
+.hero .lead{font-size:clamp(1.08rem,1.5vw,1.25rem);max-width:36em;margin-top:22px;color:var(--ink)}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .meta{margin-top:26px;color:var(--muted);font-size:.95rem}
+figure{margin:0}
+figcaption{font-size:.8125rem;color:var(--muted);margin-top:8px;line-height:1.4}
+
+.hero.split .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:end}
+.hero.split figure img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:var(--r2)}
+.hero.wide figure{margin-top:clamp(32px,5vw,56px)}
+.hero.wide figure img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:var(--r2)}
+.hero.wide .top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:40px;align-items:end}
+.hero.sign{background:var(--brand);color:var(--on-brand);padding:clamp(56px,9vw,120px) 0}
+.hero.sign .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(32px,6vw,96px);align-items:end}
+.hero.sign h1{font-size:clamp(2.6rem,6.4vw,5.6rem);max-width:12em}
+.hero.sign h1.long{font-size:clamp(2.2rem,4.8vw,4.2rem);max-width:14em}
+.vanlist{list-style:none;margin:0;padding:0;border-top:2px solid currentColor}
+.vanlist li{font-family:var(--display);font-weight:700;font-stretch:100%;font-size:clamp(1.15rem,1.8vw,1.55rem);line-height:1.15;padding:14px 0;border-bottom:1px solid color-mix(in srgb,currentColor 35%,transparent);letter-spacing:-0.005em}
+.hero.sign .lead{color:var(--on-brand);opacity:.92}
+.hero.sign .btn.primary{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand)}
+.hero.sign .btn.quiet{color:var(--on-brand);border-color:var(--on-brand)}
+.hero.sign .btn.quiet:hover{background:rgba(255,255,255,.12)}
+.hero.sign .meta{color:var(--on-brand);opacity:.8}
+.hero.calm h1{font-size:clamp(2.2rem,4.4vw,3.7rem);max-width:15em}
+.hero.calm .wrap{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:clamp(28px,5vw,64px);align-items:center}
+.hero.calm figure img{border-radius:var(--r2);width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center}
+
+/* emergency band */
+.band{background:var(--accent);color:var(--on-accent)}
+.band .wrap{display:grid;grid-template-columns:auto 1fr auto;gap:12px 40px;align-items:center;padding-top:26px;padding-bottom:26px}
+.band .num{font-family:var(--display);font-weight:700;font-stretch:100%;font-size:clamp(1.8rem,3.6vw,2.7rem);line-height:1;text-decoration:none;font-variant-numeric:tabular-nums;white-space:nowrap}
+.band .what{font-weight:600}
+.band .when{font-size:.95rem;opacity:.9}
+
+/* sections */
+section.block{padding:clamp(56px,8vw,104px) 0}
+section.block.tint{background:var(--surface)}
+.head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px);margin-bottom:clamp(28px,4vw,48px);align-items:end}
+.head h2{font-size:clamp(1.9rem,3.6vw,3rem)}
+.head p{margin:0;color:var(--muted);max-width:40em}
+
+/* services as a list, not cards */
+.services{border-top:2px solid var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr) ;gap:clamp(16px,3vw,44px);padding:28px 0;border-bottom:1px solid var(--line)}
+.svc h3{font-size:clamp(1.35rem,2.2vw,1.8rem)}
+.svc p{margin:0}
+.svc .items{margin-top:12px;color:var(--muted);font-size:.95rem}
+.svc img{border-radius:var(--r2);width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* extra */
+.extra .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(20px,4vw,56px)}
+.extra h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.steps{margin:18px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.2em 1fr;padding:10px 0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;color:var(--brand-text)}
+.timeline{display:grid;grid-template-columns:5.5em 1fr;margin:8px 0 0}
+.timeline dt,.timeline dd{padding:10px 0;border-top:1px solid var(--line);margin:0}
+.timeline dt{font-family:var(--display);font-weight:700;font-stretch:100%;color:var(--brand-text);font-variant-numeric:tabular-nums}
+.plain{margin:14px 0 0;padding:0 0 0 1.1em}
+.plain li{margin:4px 0}
+
+/* gallery */
+.gal-big{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 20px}
+.gal-big img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--r2);background:var(--surface)}
+.gal-small{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px;margin-top:32px}
+.gal-small img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r2);background:var(--surface)}
+/* about */
+.about .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:start}
+.about h2{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:24px}
+.about .facts{font-family:var(--display);font-stretch:100%;font-weight:700;font-size:clamp(1.2rem,1.9vw,1.5rem);line-height:1.3;margin:28px 0 0;padding-top:22px;border-top:2px solid var(--ink);letter-spacing:-0.005em}
+.about figure img{border-radius:var(--r2);width:100%}
+.about .sig{margin-top:22px;max-width:220px}
+.quote{margin:30px 0 0;padding:0 0 0 20px;border-left:2px solid var(--brand)}
+.quote p{font-family:var(--display);font-size:1.2rem;line-height:1.45;margin:0 0 8px}
+.quote footer{font-size:.9rem;color:var(--muted)}
+.people{margin-top:20px;font-size:.95rem;color:var(--muted)}
+
+/* jobs */
+.jobs{background:var(--brand);color:var(--on-brand)}
+.jobs .wrap{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:32px;align-items:center;padding-top:clamp(44px,6vw,72px);padding-bottom:clamp(44px,6vw,72px)}
+.jobs h2{font-size:clamp(1.7rem,3vw,2.5rem)}
+.jobs p{margin:12px 0 0;opacity:.92}
+.jobs .btn{background:var(--on-brand);color:var(--brand);border-color:var(--on-brand);justify-self:start}
+
+/* contact */
+.contact .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(28px,5vw,72px)}
+.contact h2{font-size:clamp(1.9rem,3.6vw,3rem);margin-bottom:28px}
+.phones{list-style:none;margin:0;padding:0}
+.phones li{padding:14px 0;border-top:1px solid var(--line)}
+.phones a{font-family:var(--display);font-stretch:100%;font-weight:700;font-size:clamp(1.5rem,2.6vw,2.1rem);text-decoration:none;font-variant-numeric:tabular-nums;color:var(--brand-text)}
+.phones a:hover{text-decoration:underline}
+.addr{font-style:normal;margin-top:26px;line-height:1.55}
+table.hours{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+table.hours th,table.hours td{text-align:left;padding:10px 0;border-top:1px solid var(--line);font-weight:400;vertical-align:top}
+table.hours th{font-weight:600;padding-right:24px;white-space:nowrap}
+.contact .side h3{font-family:var(--body);font-stretch:100%;font-size:1rem;font-weight:700;letter-spacing:0;margin:0 0 10px}
+.contact .side>div+div{margin-top:30px}
+
+footer.site{background:var(--ink);color:#fff;padding:44px 0 56px;font-size:.9rem}
+footer.site .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}
+footer.site p{opacity:.78;margin:0 0 .6em}
+footer.site strong{font-weight:600}
+
+@media (max-width:900px){
+  nav.main{display:none}
+  .hero.split .wrap,.hero.sign .wrap,.hero.wide .top,.hero.calm .wrap,.head,.about .wrap,.contact .grid,.extra .wrap,.jobs .wrap,footer.site .wrap{grid-template-columns:1fr}
+  .hero.split figure img{aspect-ratio:4/3}
+  .svc{grid-template-columns:1fr;gap:8px}
+  .gal-big{grid-template-columns:1fr 1fr}
+  .gal-small{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .band .wrap{grid-template-columns:1fr;gap:6px}
+}
+@media (max-width:520px){
+  h1,h2,h3{hyphens:auto;-webkit-hyphens:auto}
+  body{font-size:1rem}
+  header.site .wrap{min-height:64px;gap:14px}
+  .brandmark img{max-height:37px}
+  .headtel small{display:none}
+  .headtel{font-size:.9rem}
+  .wordmark{font-size:1.2rem}
+  .demo span.long{display:none}
+  .gal-big{grid-template-columns:1fr 1fr;gap:18px 12px}
+  .gal-small{grid-template-columns:1fr 1fr;gap:16px 12px}
+}
+</style>
 </head>
 <body>
-<div class="demo-bar"><strong>KONZEPTDEMO</strong> – unverbindlicher Designvorschlag, kein Live-Auftritt</div>
-<header class="site">
- <div class="navwrap">
-  <a class="brand" href="#top">Günter Wolf <span>| Elektrische Anlagen Karlsruhe</span></a>
-  <nav>
-   <a href="#leistungen">Leistungen</a>
-   <a href="#galerie">Galerie</a>
-   <a href="#kontakt">Kontakt</a>
-  </nav>
- </div>
-</header>
+<div class="demo"><div class="wrap"><span>Entwurf für Günter Wolf<span class="long"> · nicht öffentlich, nicht in Suchmaschinen</span></span></div></div>
+
+<header class="site"><div class="wrap">
+  <a class="brandmark" href="#top" aria-label="Günter Wolf, zum Seitenanfang">
+<span class="wordmark">Günter Wolf<small>Elektrische Anlagen, Karlsruhe seit 1967</small></span>  </a>
+  <nav class="main" aria-label="Hauptnavigation">
+<a href="#leistungen">Kompetenzen</a><a href="#referenzen">Einblicke</a><a href="#betrieb">Unternehmen</a><a href="#kontakt">Kontakt</a>  </nav>
+<a class="headtel" href="tel:+49721575555"><small>Telefon</small>0721 575555</a></div></header>
 
 <main id="top">
-<section class="hero">
- <img class="bg" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1600&q=70" alt="Beispielbild: Elektrotechnik (Symbolbild)">
- <div class="inner">
-  <span class="tag">Elektrotechnik</span>
-  <h1>Elektrotechnik, die Verbindung schafft.</h1>
-  <p>Elektroinstallation, Smart Home, Beleuchtung, Sprechanlagen, Datennetzwerke und Elektromobilität – aus einem familiengeführten Elektrofachbetrieb.</p>
-  <div class="cta-row">
-   <a class="btn btn-call" href="tel:+49721575555">📞 Jetzt anrufen: +49721575555</a>
-   <a class="btn btn-quote" href="#kontakt">Angebot anfordern</a>
+<section class="hero split"><div class="wrap">
+  <div>
+    <h1>Elektrotechnik aus Karlsruhe, in zweiter Generation</h1>
+    <p class="lead">Elektroinstallation, Sprechanlagen, Smart Home, Beleuchtung und Elektromobilität. Seit 1967 im Raum Karlsruhe, seit 2013 in der Schenkenburgstraße in Bulach.</p>
+    <div class="actions">
+<a class="btn primary" href="tel:+49721575555">0721 575555 anrufen</a>      <a class="btn quiet" href="#leistungen">Was wir machen</a>
+    </div>
   </div>
- </div>
-</section>
+<figure><img src="img/969191b534.webp" width="900" height="900" alt="Zwei rote Firmenwagen von Günter Wolf an einer Baustelle" fetchpriority="high"><figcaption>Zwei unserer Wagen auf der Baustelle</figcaption></figure></div></section>
 
-<section id="leistungen">
- <div class="wrap">
-  <span class="kicker">Leistungen</span>
-  <h2>Das bietet Günter</h2>
-  <p class="sub">Leistungen und Themenfelder laut öffentlichem Auftritt des Betriebs.</p>
+
+<section class="block" id="leistungen"><div class="wrap">
+  <div class="head"><h2>Kompetenzen</h2></div>
+  <div class="services">
+    <div class="svc">
+      <h3>Elektroinstallation</h3>
+      <div><p>Stromversorgung und Beleuchtung im Wohnhaus, in Gewerbe- und Industriebauten. Von der Leitung bis zum Verteiler, inklusive Überspannungsschutz und Potentialausgleich.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Licht</h3>
+      <div><p>Lichtplanung und Beleuchtung, auch Human Centric Lighting: Licht, das sich über den Tag an den Menschen anpasst.</p><div class="items">Lichtplanung, Human Centric Lighting</div></div>
+    </div>
+    <div class="svc">
+      <h3>Sprechanlagen und Smart Home</h3>
+      <div><p>Moderne Türsprech- und Videoanlagen und vernetzte Haustechnik.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Datennetzwerke</h3>
+      <div><p>Strukturierte Verkabelung für Büro und Wohnhaus.</p></div>
+    </div>
+    <div class="svc">
+      <h3>Elektromobilität</h3>
+      <div><p>Wallboxen und Ladeinfrastruktur für zu Hause und den Betrieb.</p></div>
+    </div>
+    <div class="svc">
+      <h3>E-Check</h3>
+      <div><p>Prüfung Ihrer Anlage als Fachbetrieb der Elektro-Innung Karlsruhe, dazu Rauchwarnmelder.</p></div>
+    </div>
+  </div>
+</div></section>
+
+
+<section class="block tint" id="referenzen"><div class="wrap">
+  <div class="head"><h2>Einblicke in unseren Alltag</h2></div>
+<div class="gal-big">
+<figure><img src="img/d03038db95.webp" width="900" height="900" alt="Arbeiten mit der Hebebühne am Mehrfamilienhaus" loading="lazy" style="object-position:center"><figcaption>Arbeiten mit der Hebebühne am Mehrfamilienhaus</figcaption></figure><figure><img src="img/7bd1fc1dfe.webp" width="800" height="841" alt="Baustelle mit Kran" loading="lazy" style="object-position:center"><figcaption>Baustelle mit Kran</figcaption></figure><figure><img src="img/f11b2c5642.webp" width="900" height="900" alt="Werkzeug und Wagen" loading="lazy" style="object-position:center"><figcaption>Werkzeug und Wagen</figcaption></figure><figure><img src="img/f7c66637c2.webp" width="900" height="900" alt="Medienverteiler im Neubau" loading="lazy" style="object-position:center"><figcaption>Medienverteiler im Neubau</figcaption></figure><figure><img src="img/0754083365.webp" width="900" height="900" alt="Kabeltrasse" loading="lazy" style="object-position:center"><figcaption>Kabeltrasse</figcaption></figure><figure><img src="img/2a0e0fb086.webp" width="588" height="389" alt="Neubau der Adam Wieland GmbH in Karlsruhe" loading="lazy" style="object-position:center"><figcaption>Neubau der Adam Wieland GmbH in Karlsruhe</figcaption></figure>  </div></div>
+</div></section>
+
+<section class="block about" id="betrieb"><div class="wrap">
+  <div>
+    <h2>Familiengeführt, mit der Region verwurzelt</h2>
+<p>Seit der Gründung 1967 bieten wir unseren Kunden nicht nur Technik, sondern so viel Service wie möglich. Unser Wissen kommt aus vielen abgeschlossenen Projekten und aus regelmäßigen Fortbildungen.</p><p>Seit 20 Jahren führen die Geschwister Christine Wolf-Rimmelspacher und Steffen Wolf den Betrieb, unterstützt von vier Bürokaufleuten. 2013 sind wir von Daxlanden in größere Räume in Bulach umgezogen, 2017 haben wir 50 Jahre gefeiert.</p><p class="facts">Seit 1967. Zweite Generation. Mitglied der Elektro-Innung Karlsruhe.</p><p class="people">Geschäftsführung: Christine Wolf-Rimmelspacher und Steffen Wolf</p>  </div>
+</div></section>
+
+<section class="jobs" id="karriere"><div class="wrap">
+  <div><h2>Jobs, Ausbildung, Praktika</h2><p>Wir suchen Elektroniker und bilden aus. Auch für ein Praktikum sind Sie bei uns richtig.</p></div>
+<a class="btn" href="mailto:info@gwolf-elektro.de?subject=Bewerbung">Bewerbung per E-Mail</a></div></section>
+
+<section class="block contact tint" id="kontakt"><div class="wrap">
+  <h2>Kontakt</h2>
   <div class="grid">
-   <div class="card"><span class="ic">🔧</span><h3>Elektrotechnik, die Verbindung schafft.</h3><p>Elektroinstallation, Smart Home, Beleuchtung, Sprechanlagen, Datennetzwerke und Elektromobilität – aus einem familiengeführten Elektrofachbetrieb.</p></div>
-<div class="card"><span class="ic">⚙️</span><h3>Das bietet Günter</h3><p>Leistungen und Themenfelder laut öffentlichem Auftritt des Betriebs.</p></div>
-<div class="card"><span class="ic">💡</span><h3>Strom, Licht und Kommunikation zusammendenken.</h3><p>Der öffentliche Auftritt verbindet klassische Elektroinstallation mit vernetzter Gebäudetechnik. Die konkrete Auslegung wird projektbezogen abgestimmt.</p></div>
-<div class="card"><span class="ic">🛠️</span><h3>Elektroinstallation</h3><p>Elektroinstallation als Kernkompetenz des Betriebs.</p></div>
-<div class="card"><span class="ic">🏠</span><h3>Smart Home</h3><p>Vernetzte Gebäudetechnik als öffentlich dargestelltes Feld.</p></div>
-<div class="card"><span class="ic">📋</span><h3>Beleuchtung</h3><p>Beleuchtung und Lichtplanung werden als Kompetenzen genannt.</p></div>
+    <div>
+      <ul class="phones">
+<li><div class="label">Telefon</div><a href="tel:+49721575555">0721 575555</a></li><li><div class="label">E-Mail</div><a href="mailto:info@gwolf-elektro.de" style="font-size:clamp(1.15rem,2vw,1.5rem)">info@gwolf-elektro.de</a></li>      </ul>
+<address class="addr"><strong>Günter Wolf Elektrische Anlagen GmbH</strong><br>Schenkenburgstraße 4<br>76135 Karlsruhe<br><a href="https://www.google.com/maps/search/?api=1&query=G%C3%BCnter%20Wolf%20Elektrische%20Anlagen%20GmbH%20Schenkenburgstra%C3%9Fe%204%2076135%20Karlsruhe" rel="noopener">Route planen</a></address>    </div>
+    <div class="side">
+    </div>
   </div>
- </div>
-</section>
-
-<section id="galerie">
- <div class="wrap">
-  <span class="kicker">Referenzen</span>
-  <h2>Eindrücke</h2>
-  <p class="sub">Symbolbilder zur Gestaltungsrichtung – in der echten Website ersetzen wir sie durch eigene Projektfotos des Betriebs.</p>
-  <div class="gallery-grid">
-   <figure><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1200&q=70" alt="Beispielbild: Elektrotechnik (Symbolbild)" loading="lazy"><figcaption>Beispielbild: Elektrotechnik (Symbolbild)</figcaption></figure>
-<figure><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=70" alt="Beispielbild: Elektrotechnik (Symbolbild)" loading="lazy"><figcaption>Beispielbild: Elektrotechnik (Symbolbild)</figcaption></figure>
-<figure><img src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=1200&q=70" alt="Beispielbild: Elektrotechnik (Symbolbild)" loading="lazy"><figcaption>Beispielbild: Elektrotechnik (Symbolbild)</figcaption></figure>
-  </div>
- </div>
-</section>
-
-<section style="background:#fafafa">
- <div class="wrap">
-  <span class="kicker">Warum Günter</span>
-  <h2>Gut zu wissen</h2>
-  <div class="trust-grid">
-   <div class="trust-item">✔️ Angaben laut öffentlichem Auftritt des Betriebs</div>
-  </div>
- </div>
-</section>
-
-<section id="kontakt" class="contact">
- <div class="wrap">
-  <span class="kicker">Kontakt</span>
-  <h2>Angebot anfordern</h2>
-  <div class="contact-flex">
-   <form onsubmit="alert('Konzeptdemo');return false;">
-    <label for="n">Name</label>
-    <input id="n" type="text" placeholder="Ihr Name" required>
-    <label for="e">E-Mail</label>
-    <input id="e" type="email" placeholder="ihre@mail.de" required>
-    <label for="t">Telefon</label>
-    <input id="t" type="tel" placeholder="Für Rückfragen">
-    <label for="m">Nachricht</label>
-    <textarea id="m" rows="4" placeholder="Was kann ich für Sie tun?" required></textarea>
-    <button class="submit" type="submit">Unverbindlich anfragen</button>
-    <p class="formnote">Konzeptdemo: Es werden keine Daten übertragen.</p>
-   </form>
-   <div class="infobox">
-    <h3 style="color:#16324f;margin-bottom:10px">Direkter Kontakt</h3>
-    <p>📞 <a href="tel:+49721575555">+49721575555</a></p>
-<p>✉️ <a href="mailto:info@gwolf-elektro.de">info@gwolf-elektro.de</a></p>
-    <h3 style='color:#16324f;margin:16px 0 8px'>Adresse</h3><p>Schenkenburgstraße 4<br>76135 Karlsruhe</p>
-    
-   </div>
-  </div>
- </div>
-</section>
+</div></section>
 </main>
 
-<footer>
- <div class="wrap">
-  <div><strong>Günter Wolf</strong><br>Schenkenburgstraße 4, 76135 Karlsruhe</div>
-  <div><strong>Kontakt</strong><br>Tel.: +49721575555<br>E-Mail: info@gwolf-elektro.de</div>
-  <div><strong>Hinweis</strong><br>Diese Seite ist eine unverbindliche<br>Konzeptdemo (Designstudie), erstellt 2026.<br>Sie enthält ausschließlich öffentlich<br>verfügbare Angaben des Betriebs.</div>
- </div>
-</footer>
-<a class="callbtn" href="tel:+49721575555" style="position:fixed">📞 Anrufen</a>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Work Sans',sans-serif;color:#1c2430;background:#fff;line-height:1.6}
-.demo-bar{background:#111;color:#fff;text-align:center;padding:8px 12px;font-size:.85rem;letter-spacing:.04em}
-.demo-bar strong{color:#f0a202}
-header.site{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08)}
-.navwrap{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px;flex-wrap:wrap}
-.brand{font-weight:800;font-size:1.15rem;color:#16324f;text-decoration:none}
-.brand span{color:#f0a202}
-nav a{color:#1c2430;text-decoration:none;margin-left:18px;font-weight:600;font-size:.95rem}
-nav a:hover{color:#f0a202}
-.hero{position:relative;color:#fff}
-.hero img.bg{width:100%;height:520px;object-fit:cover;display:block;filter:brightness(.45)}
-.hero .inner{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;max-width:1100px;margin:auto;padding:0 24px}
-.hero .tag{display:inline-block;background:#f0a202;color:#fff;font-weight:700;font-size:.85rem;padding:4px 12px;border-radius:999px;margin-bottom:14px}
-.hero h1{font-size:clamp(1.7rem,4.5vw,3rem);line-height:1.15;max-width:720px}
-.hero p{max-width:640px;margin:16px 0 24px;font-size:1.05rem;color:#eee}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-block;padding:14px 24px;border-radius:8px;font-weight:700;text-decoration:none;font-size:1rem}
-.btn-call{background:#f0a202;color:#fff}
-.btn-quote{background:rgba(255,255,255,.14);border:2px solid #fff;color:#fff}
-section{padding:64px 20px}
-.wrap{max-width:1100px;margin:auto}
-h2{font-size:clamp(1.4rem,3vw,2.1rem);color:#16324f;margin-bottom:8px}
-.kicker{color:#f0a202;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.08em}
-.sub{max-width:680px;margin-bottom:36px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{border:1px solid #e6e6e6;border-radius:10px;padding:24px;background:#fafafa}
-.card h3{color:#16324f;margin-bottom:8px;font-size:1.05rem}
-.card .ic{font-size:1.6rem;display:block;margin-bottom:10px}
-.area{background:#16324f;color:#fff}
-.area .wrap{display:flex;gap:32px;flex-wrap:wrap;align-items:center;justify-content:space-between}
-.area h2{color:#fff}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px;display:block}
-figure figcaption{font-size:.85rem;color:#666;margin-top:6px}
-.trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:28px}
-.trust-item{background:#fff;border-top:4px solid #f0a202;box-shadow:0 2px 10px rgba(0,0,0,.06);padding:20px;border-radius:0 0 10px 10px;font-weight:600;color:#16324f}
-.contact{background:#f5f5f5}
-.contact-flex{display:grid;grid-template-columns:1fr 1fr;gap:32px}
-@media(max-width:760px){.contact-flex{grid-template-columns:1fr}.hero img.bg{height:420px}nav a{margin-left:10px}}
-form{background:#fff;padding:24px;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,.07)}
-label{display:block;font-weight:600;margin:12px 0 4px}
-input,textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:6px;font-size:1rem;font-family:inherit}
-button.submit{margin-top:18px;width:100%;padding:15px;background:#f0a202;color:#fff;border:none;border-radius:8px;font-size:1.05rem;font-weight:700;cursor:pointer}
-.formnote{font-size:.85rem;color:#777;margin-top:10px;text-align:center}
-.infobox p{margin:6px 0}
-.infobox a{color:#f0a202;text-decoration:none;font-weight:600}
-footer{background:#1c2430;color:#bbb;padding:36px 20px;font-size:.9rem}
-footer .wrap{display:flex;gap:32px;flex-wrap:wrap;justify-content:space-between}
-footer strong{color:#fff}
-.callbtn{position:fixed;right:16px;bottom:16px;z-index:99;background:#f0a202;color:#fff;padding:14px 20px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.35);font-size:1rem}
-</style>
-
+<footer class="site"><div class="wrap">
+  <div><p><strong>Günter Wolf Elektrische Anlagen GmbH</strong></p><p>Schenkenburgstraße 4, 76135 Karlsruhe</p></div>
+  <div><p>Dies ist ein unverbindlicher Entwurf von John Lukas für Günter Wolf. Texte, Fotos und Logo stammen von gwolf-elektro.de und bleiben Ihr Eigentum. Die Seite ist nicht öffentlich verlinkt und für Suchmaschinen gesperrt.</p></div>
+</div></footer>
 </body>
 </html>
